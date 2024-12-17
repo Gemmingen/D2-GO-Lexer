@@ -1,0 +1,34 @@
+Person: {
+    shape: class
+    Name: string
+    Bank: int
+    Keys: []string
+    OfAge: bool
+}
+
+Cat: {
+    shape: class
+    Color: string
+    Age: int
+    FavoriteSnacks: []Snacks
+}
+
+FeedCat: {
+    shape: class
+
+    GiveSnack(amount int): string
+    MakeWarCrime(amount int, kill string): bool
+   
+}
+
+Snacks: {
+    shape: class
+
+    SnackCabinet: []string
+}
+
+#STOP
+
+Person -> FeedCat: Wants to
+FeedCat -> Cat: Snack goes to
+Cat -> FavoriteSnacks: Has
