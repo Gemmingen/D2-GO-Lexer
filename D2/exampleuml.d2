@@ -2,7 +2,6 @@ Person: {
     shape: class
     Name: string
     Bank: int
-    Keys: []string
     OfAge: bool
 }
 
@@ -10,21 +9,21 @@ Cat: {
     shape: class
     Color: string
     Age: int
-    FavoriteSnacks: []Snacks
+    FavoriteSnacks: string
 }
 
 FeedCat: {
     shape: class
 
     GiveSnack(amount int): string
-    MakeWarCrime(amount int, kill string): bool
-   
+    ScratchOwner(amount int): bool
+    
 }
 
 Snacks: {
     shape: class
 
-    SnackCabinet: []string
+    SnackCabinet: string
 }
 
 #STOP
